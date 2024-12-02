@@ -1,0 +1,113 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  <body>
+    <h1 id="title">Buy a Plant</h1>
+    <p id="description">Fill the information below </p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Full name:<input id="name" type="text" placeholder="Enter name"required/></label>
+      <label id="email-label">Email:<input id="email" type="email" required placeholder="Enter email"/></label>
+     <label id="number-label">Age<input id="number" type="number" min="18" max="150" placeholder="0"/> </label></fieldset>
+     <fieldset><label id="occupations">What is your occupation?</label>
+    <select id="dropdown">
+      <option>select one</option>
+      <option>Student</option>
+      <option>Employed</option>
+      <option>Unemployed</option>
+    </select></fieldset>
+    <fieldset>
+      <p>Do you prefer online shopping?</p>
+        <label><input name="option" type="radio"  class="inline" value="1" checked/> Yes</label>
+        <label><input name="option" type="radio" class="inline" value="2" /> No</label>
+      </fieldset>
+   
+     <label class="plants">
+       <p>What type of plant are you looking for?</p>
+      <input class="inline" type="checkbox" value="1">Roses
+    <input class="inline" type="checkbox" value="2">Peace Lily
+    <input class="inline" type="checkbox" value="2">Monstera
+    <input class="inline" type="checkbox" value="2">Jade Plant
+    <input class="inline" type="checkbox" value="2">Lucky Bamboo
+    </label>
+    <fieldset>
+  <label>Any aditional information you would like us to know?<textarea id="info" placeholder="Share with us" rows="4" cols="40"></textarea></label>
+    <input id="submit" type="submit" value="Submit"/></fieldset>
+    </form>
+  </body>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #4c5a70;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #4c5a70;
+  border-color: gray;
+  min-width: 300px;
+}
+.inline {
+  width: unset;
+  margin: 0 1em 0 0;
+  vertical-align: middle;
+}
+input, textarea {
+  background-color: #1c2d47;
+  border: 1px solid #1c2d47;
+  color: #ffffff;
+}
+
+
+
+
+
+
+** end of undefined **
+
